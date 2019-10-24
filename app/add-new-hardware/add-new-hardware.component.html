@@ -1,0 +1,23 @@
+<div class="container">
+        <h2>Hardware</h2>
+        <br/>
+        <form>
+          <div class="form-group">
+            <label for="HWName">Hardwares Name:</label>
+            <input type="text" class="form-control" id="HWName" [(ngModel)]="HWInfo.hardwareName" name="HWName">
+          </div>
+          <div class="form-group">
+            <label for="HWCat">Hardware Category:</label>
+            <input type="text" class="form-control" id="HWCat" [(ngModel)]="HWInfo.hardwareCategory" name="HWCat">
+          </div>
+          <div class="form-group">
+            <label for="HWVen">Hardware Vendor:</label>
+            <input type="text" class="form-control" id="HWVen" [(ngModel)]="HWInfo.hardwareVendor" name="HWVen">
+          </div>
+          <div class="form-group">
+            <label for="HWDesc">Hardware Description:</label>
+            <input type="text" class="form-control" id="HWDesc" [(ngModel)]="HWInfo.hardwareDescription" name="HWDesc">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="addHW($event)">Save</button>
+        </form>
+      </div>

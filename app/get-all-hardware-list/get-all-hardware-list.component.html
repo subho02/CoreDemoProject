@@ -1,0 +1,20 @@
+<button type="button" class="btn btn-primary" (click)="newRecord()">Add New Hardware</button>
+<br/><br/>
+<table class="table">
+        <thead>
+          <tr>
+            <th>Hardware Name</th>
+            <th>Category</th>
+            <th>Vendor</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr *ngFor="let item of hardwareData">
+                <td>{{ item.hardwareName }}</td>
+                <td>{{ item.hardwareCategory}}</td>
+                <td>{{ item.hardwareVendor }}</td>
+                <td>{{ item.hardwareDescription }}</td>
+         </tr>
+        </tbody>
+</table>
